@@ -1,4 +1,6 @@
 EngineTest::Application.routes.draw do
+  mount Sampler::Engine, at: "/sampler"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
