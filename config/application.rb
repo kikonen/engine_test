@@ -58,5 +58,12 @@ module EngineTest
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.colorize_logging = false
+
+    # HACK KI "rake assets:precompile" is failing without this
+    Rack::Mime::MIME_TYPES.merge!({
+        ".map" => "text/plain",
+        ".gzip" => "application/gzip"})
   end
 end

@@ -40,4 +40,10 @@ EngineTest::Application.configure do
 
   # Show the logging configuration on STDOUT
   config.show_log_configuration = true
+
+  # Set the logging destination(s)
+  config.log_to = %w[file]
+
+  # Show the logging configuration on STDOUT
+  config.show_log_configuration = true
 end
