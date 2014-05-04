@@ -16,17 +16,11 @@ gem 'awesome_print'
 gem 'sampler', git: 'git@github.com:kikonen/sampler.git', branch: 'master'
 #gem 'sampler', path: '../sampler'
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'ngmin-rails'
   gem 'bootstrap-sass', '~> 2.3.1.0'
-
   gem 'sass-rails',   '~> 3.2.3'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
