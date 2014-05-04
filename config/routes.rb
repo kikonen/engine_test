@@ -1,6 +1,11 @@
 EngineTest::Application.routes.draw do
   mount Sampler::Engine, at: "/sampler"
 
+  namespace :api, defaults: {format: :json} do
+    get 'test', to: 'test#index'
+    get 'test/:id', to: 'test#show'
+  end
+
   # @see http://omarriott.com/aux/angularjs-html5-routing-rails/
   match "/sampler/*path" => redirect("/sampler/?path=%{path}")
 
