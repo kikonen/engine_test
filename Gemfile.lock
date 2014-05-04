@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:kikonen/sampler.git
-  revision: 392d233a511b708f07f960d86d6258742a51fc5d
+  revision: f85a58b99c06c72355ae5d14b30670e80dce0b0a
   branch: master
   specs:
     sampler (0.0.1)
