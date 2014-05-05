@@ -2,8 +2,11 @@ EngineTest::Application.routes.draw do
   mount Sampler::Engine, at: "/sampler"
 
   namespace :api, defaults: {format: :json} do
+    post 'test', to: 'test#create'
     get 'test', to: 'test#index'
     get 'test/:id', to: 'test#show'
+    put 'test/:id', to: 'test#update'
+    delete 'test/:id', to: 'test#delete'
   end
 
   # @see http://omarriott.com/aux/angularjs-html5-routing-rails/
