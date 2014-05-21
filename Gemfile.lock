@@ -71,6 +71,8 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     multi_json (1.9.3)
+    ngannotate-rails (0.9.2)
+      rails (>= 3.1)
     ngmin-rails (0.4.0)
       rails (>= 3.1)
     polyglot (0.3.4)
@@ -148,7 +150,7 @@ DEPENDENCIES
   bootstrap-sass (~> 2.3.1.0)
   hashie
   logging-rails
-  ngmin-rails
+  ngannotate-rails
   pry-rails
   rails (= 3.2.17)
   sampler!

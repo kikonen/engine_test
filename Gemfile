@@ -18,7 +18,7 @@ gem 'sampler', git: 'git@github.com:kikonen/sampler.git', branch: 'master'
 
 group :assets do
   gem 'slim-rails'
-  gem 'ngmin-rails'
+  gem 'ngannotate-rails'
   gem 'bootstrap-sass', '~> 2.3.1.0'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'therubyracer', :platforms => :ruby
